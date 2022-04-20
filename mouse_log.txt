@@ -1,0 +1,121 @@
+2022-04-20 16:53:34,351: Mouse clicked at (1078, 803) with Button.left
+2022-04-20 16:53:34,782: Mouse clicked at (1078, 803) with Button.left
+2022-04-20 16:53:43,620: Mouse clicked at (1098, 823) with Button.left
+2022-04-20 16:53:55,344: Mouse clicked at (168, 368) with Button.left
+2022-04-20 16:53:57,617: Mouse clicked at (1242, 345) with Button.left
+2022-04-20 16:53:59,318: Mouse clicked at (914, 517) with Button.left
+2022-04-20 16:54:01,390: Mouse clicked at (1552, 428) with Button.left
+2022-04-20 16:54:02,956: Mouse clicked at (1533, 158) with Button.left
+2022-04-20 17:07:57,387: Mouse clicked at (1095, 954) with Button.left
+2022-04-20 17:08:10,075: Mouse clicked at (1281, 634) with Button.left
+2022-04-20 17:08:17,507: Mouse clicked at (1107, 61) with Button.left
+2022-04-20 17:08:22,316: Mouse clicked at (1103, 476) with Button.left
+2022-04-20 17:08:24,820: Mouse clicked at (1159, 850) with Button.left
+2022-04-20 17:08:28,854: Mouse clicked at (1246, 551) with Button.right
+2022-04-20 17:08:30,464: Mouse clicked at (930, 541) with Button.left
+2022-04-20 17:08:37,635: Mouse clicked at (873, 969) with Button.left
+2022-04-20 17:08:43,099: Mouse clicked at (1841, 728) with Button.left
+2022-04-20 17:12:25,607: Mouse clicked at (1786, 500) with Button.left
+2022-04-20 17:12:36,142: Mouse clicked at (1767, 568) with Button.left
+2022-04-20 17:12:37,743: Mouse clicked at (889, 602) with Button.left
+2022-04-20 17:12:38,786: Mouse clicked at (768, 413) with Button.left
+2022-04-20 17:12:40,896: Mouse clicked at (1716, 597) with Button.left
+2022-04-20 17:12:47,860: Mouse clicked at (680, 608) with Button.left
+2022-04-20 17:12:49,120: Mouse clicked at (776, 669) with Button.left
+2022-04-20 17:13:03,020: Mouse clicked at (761, 579) with Button.left
+2022-04-20 17:13:03,690: Mouse clicked at (808, 683) with Button.left
+2022-04-20 17:13:04,003: Mouse clicked at (808, 683) with Button.left
+2022-04-20 17:13:04,257: Mouse clicked at (808, 683) with Button.left
+2022-04-20 17:13:04,449: Mouse clicked at (808, 683) with Button.left
+2022-04-20 17:13:05,283: Mouse clicked at (808, 683) with Button.right
+2022-04-20 17:13:05,715: Mouse clicked at (808, 683) with Button.right
+2022-04-20 17:13:06,183: Mouse clicked at (808, 683) with Button.right
+2022-04-20 17:13:08,337: Mouse clicked at (808, 683) with Button.left
+2022-04-20 17:13:17,210: Mouse clicked at (1443, 653) with Button.left
+2022-04-20 17:13:22,231: Mouse clicked at (1840, 727) with Button.left
+2022-04-20 17:36:44,020: key_pressed with (k)
+2022-04-20 17:36:44,130: key_release with (k)
+2022-04-20 17:36:45,035: key_pressed with (j)
+2022-04-20 17:36:45,208: key_release with (j)
+2022-04-20 17:36:45,503: key_pressed with (a)
+2022-04-20 17:36:45,737: key_release with (a)
+2022-04-20 17:36:45,799: key_pressed with (i)
+2022-04-20 17:36:45,957: key_release with (i)
+2022-04-20 17:36:46,177: key_pressed with (d)
+2022-04-20 17:36:46,286: key_release with (d)
+2022-04-20 17:36:46,453: key_pressed with (k)
+2022-04-20 17:36:46,532: key_release with (k)
+2022-04-20 17:36:47,739: key_pressed with (Key.esc)
+2022-04-20 17:36:47,881: key_release with (Key.esc)
+2022-04-20 17:36:49,393: key_pressed with (h)
+2022-04-20 17:36:49,503: key_release with (h)
+2022-04-20 17:36:50,749: key_pressed with (i)
+2022-04-20 17:36:50,842: key_release with (i)
+2022-04-20 17:36:51,251: key_pressed with (k)
+2022-04-20 17:36:51,298: key_release with (k)
+2022-04-20 17:36:53,272: key_pressed with (Key.backspace)
+2022-04-20 17:36:53,302: key_release with (Key.backspace)
+2022-04-20 17:36:54,359: key_pressed with (Key.delete)
+2022-04-20 17:36:54,436: key_release with (Key.delete)
+2022-04-20 17:36:55,567: key_pressed with (Key.enter)
+2022-04-20 17:36:55,646: key_release with (Key.enter)
+2022-04-20 17:36:56,427: key_pressed with (Key.right)
+2022-04-20 17:36:56,520: key_release with (Key.right)
+2022-04-20 17:36:56,886: key_pressed with (Key.left)
+2022-04-20 17:36:57,042: key_release with (Key.left)
+2022-04-20 17:36:57,228: key_pressed with (Key.left)
+2022-04-20 17:36:57,339: key_release with (Key.left)
+2022-04-20 17:36:57,633: key_pressed with (Key.up)
+2022-04-20 17:36:57,712: key_pressed with (Key.down)
+2022-04-20 17:36:57,805: key_release with (Key.down)
+2022-04-20 17:36:57,899: key_release with (Key.up)
+2022-04-20 17:36:57,993: key_pressed with (Key.left)
+2022-04-20 17:36:58,072: key_release with (Key.left)
+2022-04-20 17:36:58,150: key_pressed with (Key.up)
+2022-04-20 17:36:58,227: key_release with (Key.up)
+2022-04-20 17:36:58,258: key_pressed with (Key.left)
+2022-04-20 17:36:58,398: key_release with (Key.left)
+2022-04-20 17:36:58,916: key_pressed with (j)
+2022-04-20 17:36:59,026: key_pressed with (a)
+2022-04-20 17:36:59,121: key_pressed with (s)
+2022-04-20 17:36:59,213: key_pressed with (;)
+2022-04-20 17:36:59,309: key_release with (j)
+2022-04-20 17:36:59,371: key_pressed with (d)
+2022-04-20 17:36:59,465: key_release with (a)
+2022-04-20 17:36:59,560: key_release with (;)
+2022-04-20 17:36:59,652: key_pressed with (f)
+2022-04-20 17:36:59,699: key_pressed with (j)
+2022-04-20 17:36:59,777: key_release with (s)
+2022-04-20 17:36:59,873: key_release with (d)
+2022-04-20 17:36:59,984: key_pressed with (o)
+2022-04-20 17:37:00,061: key_release with (f)
+2022-04-20 17:37:00,157: key_release with (j)
+2022-04-20 17:37:00,251: key_release with (o)
+2022-04-20 17:37:00,329: key_pressed with (Key.ctrl_l)
+2022-04-20 17:37:00,361: key_pressed with (Key.shift)
+2022-04-20 17:37:00,453: key_pressed with (None)
+2022-04-20 17:37:00,547: key_release with (Key.ctrl_l)
+2022-04-20 17:37:00,578: key_release with (Key.shift)
+2022-04-20 17:37:00,580: key_pressed with (Key.shift_r)
+2022-04-20 17:37:00,673: key_release with (Key.caps_lock)
+2022-04-20 17:37:00,736: key_release with (Key.shift_r)
+2022-04-20 17:37:00,830: key_pressed with (Key.shift)
+2022-04-20 17:37:00,907: key_pressed with (Key.caps_lock)
+2022-04-20 17:37:01,003: key_pressed with (Key.tab)
+2022-04-20 17:37:01,081: key_release with (Key.shift)
+2022-04-20 17:37:01,161: key_release with (Key.tab)
+2022-04-20 17:37:01,240: key_release with (Key.caps_lock)
+2022-04-20 17:37:01,316: key_pressed with (Key.shift_r)
+2022-04-20 17:37:01,394: key_release with (Key.shift_r)
+2022-04-20 17:37:03,317: key_pressed with (Key.shift)
+2022-04-20 17:37:03,440: key_pressed with (Key.caps_lock)
+2022-04-20 17:37:03,517: key_release with (Key.shift)
+2022-04-20 17:37:03,608: key_release with (Key.caps_lock)
+2022-04-20 17:37:05,338: key_pressed with (k)
+2022-04-20 17:37:05,432: key_release with (k)
+2022-04-20 17:37:05,978: key_pressed with (d)
+2022-04-20 17:37:06,118: key_release with (d)
+2022-04-20 17:37:06,180: key_pressed with (i)
+2022-04-20 17:37:06,273: key_release with (i)
+2022-04-20 17:37:10,263: key_pressed with (Key.ctrl_l)
+2022-04-20 17:37:10,452: key_pressed with ()

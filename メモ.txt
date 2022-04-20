@@ -1,0 +1,15 @@
+list2 = [[0 for i in range(3)] for j in range(2)]
+
+
+pyautogui.click() 	現在のマウスカーソル位置をクリック
+pyautogui.click(x, y) 	モニター上の座標(x, y)の位置をクリック
+pyautogui.click('button.png') 	クリックしたいボタンの画像を指定してそこをクリック
+
+
+f = open('mouse_log.txt', 'r')
+
+for line in f:
+    line = line.rstrip()
+    l = line.split(",")
+    print l
+f.close()
