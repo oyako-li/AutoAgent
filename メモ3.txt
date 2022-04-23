@@ -1,0 +1,49 @@
+def calc_pi(sim_num):
+ 
+    # prep counter
+    inside_cnt = 0
+ 
+    # get the random value (0-1)
+    x = np.random.rand(sim_num)
+    y = np.random.rand(sim_num)
+    # calc Euclid distance from center
+    d = (x**2) + (y**2) # math.sqrt((x-0)**2 + (y-0)**2) # for speed
+     
+    # inside or outside
+    inside_cnt = np.sum(d <= 1)
+         
+    # calc pi from simulation result
+    p = inside_cnt / sim_num * 4    
+ 
+    # return pi
+    return p
+
+# set param
+sim_num   = 10000000
+
+
+def calc_pi(sim_num):
+  
+    # prep counter
+    inside_cnt = 0
+  
+    # loop of simulation
+    for sim_i in range(sim_num):
+        # get the random value (0-1)
+        x = np.random.rand()
+        y = np.random.rand()
+        # calc Euclid distance from center
+        d = (x**2) + (y**2) # math.sqrt((x-0)**2 + (y-0)**2) # for speed
+      
+        # inside or outside
+        if (d <= 1):
+            inside_cnt += 1
+          
+    # calc pi from simulation result
+    p = inside_cnt / sim_num * 4    
+  
+    # return pi
+    return p
+
+# set param
+sim_num   = 10000000

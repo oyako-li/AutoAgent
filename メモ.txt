@@ -1,15 +1,32 @@
-list2 = [[0 for i in range(3)] for j in range(2)]
+None一覧
+9
+8
+7
+半角/全角 243⇔244
+u
+i
+o
+p
+l
+k
+j
+Capslock → capslock
+m
+.
+カタカナひらがなローマ字 240
+変換かな  28
+無変換英数 29
+
+clear::Num lock
+convert::変換→無変換::29
+nonconvert::無変換→変換::28
+Kana::IME かなモード キー::242
+KanjiMode::IME 漢字モード キー 244
 
 
-pyautogui.click() 	現在のマウスカーソル位置をクリック
-pyautogui.click(x, y) 	モニター上の座標(x, y)の位置をクリック
-pyautogui.click('button.png') 	クリックしたいボタンの画像を指定してそこをクリック
-
-
-f = open('mouse_log.txt', 'r')
-
-for line in f:
-    line = line.rstrip()
-    l = line.split(",")
-    print l
-f.close()
+decimal::小数点
+Divide::除算記号 (/) キー
+Junja::IME Junja モード キー 
+LaunchApplication1::カスタム ホット キー 1
+LaunchApplication2::カスタム ホット キー 2 
+LaunchMail::メール ホット キー

@@ -1,4 +1,4 @@
-f = open('Wed,20,Apr,2022,09,21,24.log', 'r')
+f = open('Fri,22,Apr,2022,08,04,05.log', 'r')
 
 log = []
 
@@ -7,7 +7,5 @@ for line in f:
     l = line.split(",")
     print(l)
     log.append(l)
-
-print(log)
 
 f.close()
