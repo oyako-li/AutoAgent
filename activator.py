@@ -102,57 +102,83 @@ def activate(_log):
 
         if "<29>" == _log[i][2]:
             _log[i][2] = "convert"
+            continue
 
         if "\x01" ==  _log[i][2]:
             _log[i][2] = "ctrl:a"
+            continue
         if "\x02" ==  _log[i][2]:
             _log[i][2] = "ctrl:b"
+            continue
         if "\x03" ==  _log[i][2]:
             _log[i][2] = "ctrl:c"
+            continue
         if "\x04" ==  _log[i][2]:
             _log[i][2] = "ctrl:d"
+            continue
         if "\x05" ==  _log[i][2]:
             _log[i][2] = "ctrl:e"
+            continue
         if "\x06" ==  _log[i][2]:
             _log[i][2] = "ctrl:f"
+            continue
         if "\x07" ==  _log[i][2]:
             _log[i][2] = "ctrl:g"
+            continue
         if "\x08" ==  _log[i][2]:
             _log[i][2] = "ctrl:h"
+            continue
         if "\x09" ==  _log[i][2]:
             _log[i][2] = "ctrl:i"
+            continue
         if "\x0A" ==  _log[i][2]:
             _log[i][2] = "ctrl:j"
+            continue
         if "\x0B" ==  _log[i][2]:
             _log[i][2] = "ctrl:k"
+            continue
         if "\x0C" ==  _log[i][2]:
             _log[i][2] = "ctrl:l"
+            continue
         if "\x0D" ==  _log[i][2]:
             _log[i][2] = "ctrl:m"
+            continue
         if "\x0E" ==  _log[i][2]:
             _log[i][2] = "ctrl:n"
+            continue
         if "\x0F" ==  _log[i][2]:
             _log[i][2] = "ctrl:o"
+            continue
         if "\x10" ==  _log[i][2]:
             _log[i][2] = "ctrl:p"
+            continue
         if "\x11" ==  _log[i][2]:
             _log[i][2] = "ctrl:q"
+            continue
         if "\x12" ==  _log[i][2]:
             _log[i][2] = "ctrl:r"
+            continue
         if "\x13" ==  _log[i][2]:
             _log[i][2] = "ctrl:s"
+            continue
         if "\x14" ==  _log[i][2]:
             _log[i][2] = "ctrl:t"
+            continue
         if "\x15" ==  _log[i][2]:
             _log[i][2] = "ctrl:u"
+            continue
         if "\x16" ==  _log[i][2]:
             _log[i][2] = "ctrl:v"
+            continue
         if "\x17" ==  _log[i][2]:
             _log[i][2] = "ctrl:w"
+            continue
         if "\x18" ==  _log[i][2]:
             _log[i][2] = "ctrl:x"
+            continue
         if "\x19" ==  _log[i][2]:
             _log[i][2] = "ctrl:y"
+            continue
         if "\x1A" ==  _log[i][2]:
             _log[i][2] = "ctrl:z"
 

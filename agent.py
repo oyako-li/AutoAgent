@@ -1,7 +1,5 @@
 from distutils.log import Log
 import tkinter as tk
-from tkinter import messagebox
-import tkhtmlview as tv
 from logger import logger
 from activator import activator
 import time
@@ -22,6 +20,9 @@ class Agent(tk.Tk):
         filename = time.strftime("%a,%d,%b,%Y,%H,%M,%S", time.gmtime())
         logger(filename)
         self.Actions(filename)
+        tk.messagebox.showinfo(title="Complete", message=f"{filename} was logged.")
+        self.deiconify()
+
 
     def load(self):
         self.loader = tk.Toplevel()
@@ -49,12 +50,7 @@ class Agent(tk.Tk):
         except FileExistsError as err:
             tk.messagebox.showerror(title='Exeption', message=f'FileExistsError: {err}')
         except FileNotFoundError as err:
-            tk.messagebox.showerror(title='Exeption', message=f'FileNotFoundError: {err}')
-
-    def popup(self):
-        self.deiconify()
-        self.grab_set()
-        
+            tk.messagebox.showerror(title='Exeption', message=f'FileNotFoundError: {err}')        
 
     class Actions:
         def __init__(self, _filename):
@@ -83,7 +79,6 @@ class Agent(tk.Tk):
             self.name_entry = tk.Entry(self.re_name)
             self.name_entry.insert(0, self.sub.title())
             self.name_entry.bind('<Return>', self.pre_name)
-            # self.name_entry.bind('<Button-1>', self.click_name)
             self.name_entry.place(x=10, y=25)
             self.name_entry.select_range(0, tk.END)
             self.name_entry.focus()
@@ -94,9 +89,6 @@ class Agent(tk.Tk):
         def pre_name(self, event):
             self.name()
 
-        # def click_name(self, event):
-
-
         def name(self):
             try:
                 os.rename(f'./log/{self.sub.title()}.log', f'./log/{self.name_entry.get()}.log')
@@ -106,9 +98,6 @@ class Agent(tk.Tk):
 
             except FileExistsError as err:
                 tk.messagebox.showerror(title='Exeption', message=f'FileExistsError: {err}')
-            
-
-
 
 if __name__ == '__main__':
     agent = Agent()
