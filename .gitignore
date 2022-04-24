@@ -1,2 +1,3 @@
 .venv
 # mouse_log.txt
+./log/*
