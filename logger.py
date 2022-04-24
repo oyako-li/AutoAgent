@@ -8,7 +8,6 @@ pre_time = 0
 command = True
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 _log = logging.getLogger('log_phase')
-filename = time.strftime("%a,%d,%b,%Y,%H,%M,%S", time.gmtime())
 
 
 def logger(_filename):
@@ -16,7 +15,6 @@ def logger(_filename):
     global command
     global _log
 
-    _log.handlers.clear()
     file_handler = logging.FileHandler(f"./log/{_filename}.log")
     file_handler.setLevel(logging.INFO)
     _log.addHandler(file_handler)
@@ -42,6 +40,7 @@ def logger(_filename):
 
     mouse_listener.stop()       # mouseのListenerを止める
     keyboard_listener.stop()
+    _log.handlers.clear()
     return True
 
 def click(x, y, button, pressed):
@@ -102,4 +101,6 @@ def release(key):
         pre_time = now
     
 if __name__ == '__main__':
+    filename = time.strftime("%a,%d,%b,%Y,%H,%M,%S", time.gmtime())
     logger(filename)
+    print(filename)

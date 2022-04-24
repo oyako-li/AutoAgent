@@ -1,8 +1,7 @@
-from distutils.log import Log
 import tkinter as tk
 import tkhtmlview as tv
 from logger import logger
-from activator3 import activator
+from activator6 import activator
 from tkinter import messagebox
 import time
 
@@ -10,8 +9,8 @@ class Agent(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
         self.title('AutoAgent')
-        self.geometry('100x100')
-        self.start_button = tk.Button(text="Start", command=self.logging)
+        self.geometry('300x300')
+        self.start_button = tk.Button(text="録動", command=self.logging)
         self.start_button.place(x=50, y=50)
         self.actions = []
 
@@ -19,9 +18,21 @@ class Agent(tk.Tk):
         self.iconify()
         filename = time.strftime("%a,%d,%b,%Y,%H,%M,%S", time.gmtime())
         logger(filename)
-        self.deiconify()
-        self.actions.append(self.Actions(filename))
         print(f"{filename} is stopped")
+        self.deiconify()
+        self.wm_state('zoom')
+        self.actions.append(filename)
+        self.action_button = tk.Button(text="起動", command=self.actting)
+        self.action_button.place(x=100, y=50)
+
+    def actting(self):
+        self.iconify()
+        for action in self.actions:
+            activator(action)
+            print(f"{action} is complete.")
+        
+        self.deiconify()
+        
 
     class Actions:
         def __init__(self, _filename):
@@ -39,7 +50,6 @@ class Agent(tk.Tk):
             activator(filename)
             print(f"{filename} is complete.")
             self.sub.deiconify()
-            # self.sub.wm_state('normal')
             self.sub.attributes("-topmost", True)
 
 

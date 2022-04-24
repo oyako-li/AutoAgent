@@ -9,12 +9,12 @@ def mouse_up(a):
     pgi.moveTo(int(a[0]), int(a[1]))
     pgi.mouseUp(button=a[2])
 
+# def c(a,b, _mouse):
+#     pgi.moveTo(int(a), int(b))
+#     pgi.mouseDown(button=_mouse)
+
 def key_down(a):
-    if ":" in a:
-        a = a.split(':')
-        pgi.hotkey(a[0],a[1])
-    else:
-        pgi.keyDown(a)
+    pgi.keyDown(a)
 
 def key_up(a):
     pgi.keyUp(a)
@@ -103,59 +103,6 @@ def activate(_log):
         if "<29>" == _log[i][2]:
             _log[i][2] = "convert"
 
-        if "\x01" ==  _log[i][2]:
-            _log[i][2] = "ctrl:a"
-        if "\x02" ==  _log[i][2]:
-            _log[i][2] = "ctrl:b"
-        if "\x03" ==  _log[i][2]:
-            _log[i][2] = "ctrl:c"
-        if "\x04" ==  _log[i][2]:
-            _log[i][2] = "ctrl:d"
-        if "\x05" ==  _log[i][2]:
-            _log[i][2] = "ctrl:e"
-        if "\x06" ==  _log[i][2]:
-            _log[i][2] = "ctrl:f"
-        if "\x07" ==  _log[i][2]:
-            _log[i][2] = "ctrl:g"
-        if "\x08" ==  _log[i][2]:
-            _log[i][2] = "ctrl:h"
-        if "\x09" ==  _log[i][2]:
-            _log[i][2] = "ctrl:i"
-        if "\x0A" ==  _log[i][2]:
-            _log[i][2] = "ctrl:j"
-        if "\x0B" ==  _log[i][2]:
-            _log[i][2] = "ctrl:k"
-        if "\x0C" ==  _log[i][2]:
-            _log[i][2] = "ctrl:l"
-        if "\x0D" ==  _log[i][2]:
-            _log[i][2] = "ctrl:m"
-        if "\x0E" ==  _log[i][2]:
-            _log[i][2] = "ctrl:n"
-        if "\x0F" ==  _log[i][2]:
-            _log[i][2] = "ctrl:o"
-        if "\x10" ==  _log[i][2]:
-            _log[i][2] = "ctrl:p"
-        if "\x11" ==  _log[i][2]:
-            _log[i][2] = "ctrl:q"
-        if "\x12" ==  _log[i][2]:
-            _log[i][2] = "ctrl:r"
-        if "\x13" ==  _log[i][2]:
-            _log[i][2] = "ctrl:s"
-        if "\x14" ==  _log[i][2]:
-            _log[i][2] = "ctrl:t"
-        if "\x15" ==  _log[i][2]:
-            _log[i][2] = "ctrl:u"
-        if "\x16" ==  _log[i][2]:
-            _log[i][2] = "ctrl:v"
-        if "\x17" ==  _log[i][2]:
-            _log[i][2] = "ctrl:w"
-        if "\x18" ==  _log[i][2]:
-            _log[i][2] = "ctrl:x"
-        if "\x19" ==  _log[i][2]:
-            _log[i][2] = "ctrl:y"
-        if "\x1A" ==  _log[i][2]:
-            _log[i][2] = "ctrl:z"
-
     for i in range(len(_log)):
         if 'Button.left.True' == _log[i][1]:
             _log[i][2] = _log[i][2].split(':')+['left']
@@ -188,4 +135,4 @@ def activate(_log):
     
 
 if __name__ == "__main__":
-    activator("Sun,24,Apr,2022,03,18,01")
+    activator("Sat,23,Apr,2022,07,22,52")

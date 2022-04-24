@@ -5,7 +5,8 @@ def a(a,b):
     pgi.moveTo(int(a), int(b))
     pgi.click()
 
-def b():
+def b(a,b):
+    pgi.moveTo(int(a),int(b))
     pgi.mouseUp()
 
 def c(a,b):
@@ -13,15 +14,15 @@ def c(a,b):
     pgi.rightClick()
 
 def d(a):
-    pgi.keyDown(a)
+    if a == "ctrl":
+        pass
+    elif a in ":":
+        a = a.split(':')
+        pgi.hotkey(a[0],a[1])
+    else:
+        pgi.keyDown(a)
 
 def e(a):
-    pgi.keyUp(a)
-
-def h(a):
-    pgi.keyDown(a)
-
-def g(a):
     pgi.keyUp(a)
 
 
@@ -51,10 +52,10 @@ def activator(_filename):
             log[i][2] = "shiftright"
 
         if "ctrlr" == log[i][2]:
-            log[i][2] = "ctrlright"
-
+            log[i][2] = "ctrl"
+        
         if "ctrll" == log[i][2]:
-            log[i][2] = "ctrlleft"
+            log[i][2] = "ctrl"
 
         if "altgr" == log[i][2]:
             log[i][2] ="optionright"
@@ -72,57 +73,57 @@ def activator(_filename):
             log[i][2] = "convert"
 
         if "\x01" ==  log[i][2]:
-            log[i][2] = "a"
+            log[i][2] = "ctrl:a"
         if "\x02" ==  log[i][2]:
-            log[i][2] = "b"
+            log[i][2] = "ctrl:b"
         if "\x03" ==  log[i][2]:
-            log[i][2] = "c"
+            log[i][2] = "ctrl:c"
         if "\x04" ==  log[i][2]:
-            log[i][2] = "d"
+            log[i][2] = "ctrl:d"
         if "\x05" ==  log[i][2]:
-            log[i][2] = "e"
+            log[i][2] = "ctrl:e"
         if "\x06" ==  log[i][2]:
-            log[i][2] = "f"
+            log[i][2] = "ctrl:f"
         if "\x07" ==  log[i][2]:
-            log[i][2] = "g"
+            log[i][2] = "ctrl:g"
         if "\x08" ==  log[i][2]:
-            log[i][2] = "h"
+            log[i][2] = "ctrl:h"
         if "\x09" ==  log[i][2]:
-            log[i][2] = "i"
+            log[i][2] = "ctrl:i"
         if "\x0A" ==  log[i][2]:
-            log[i][2] = "j"
+            log[i][2] = "ctrl:j"
         if "\x0B" ==  log[i][2]:
-            log[i][2] = "k"
+            log[i][2] = "ctrl:k"
         if "\x0C" ==  log[i][2]:
-            log[i][2] = "l"
+            log[i][2] = "ctrl:l"
         if "\x0D" ==  log[i][2]:
-            log[i][2] = "m"
+            log[i][2] = "ctrl:m"
         if "\x0E" ==  log[i][2]:
-            log[i][2] = "n"
+            log[i][2] = "ctrl:n"
         if "\x0F" ==  log[i][2]:
-            log[i][2] = "o"
+            log[i][2] = "ctrl:o"
         if "\x10" ==  log[i][2]:
-            log[i][2] = "p"
+            log[i][2] = "ctrl:p"
         if "\x11" ==  log[i][2]:
-            log[i][2] = "q"
+            log[i][2] = "ctrl:q"
         if "\x12" ==  log[i][2]:
-            log[i][2] = "r"
+            log[i][2] = "ctrl:r"
         if "\x13" ==  log[i][2]:
-            log[i][2] = "s"
+            log[i][2] = "ctrl:s"
         if "\x14" ==  log[i][2]:
-            log[i][2] = "t"
+            log[i][2] = "ctrl:t"
         if "\x15" ==  log[i][2]:
-            log[i][2] = "u"
+            log[i][2] = "ctrl:u"
         if "\x16" ==  log[i][2]:
-            log[i][2] = "v"
+            log[i][2] = "ctrl:v"
         if "\x17" ==  log[i][2]:
-            log[i][2] = "w"
+            log[i][2] = "ctrl:w"
         if "\x18" ==  log[i][2]:
-            log[i][2] = "x"
+            log[i][2] = "ctrl:x"
         if "\x19" ==  log[i][2]:
-            log[i][2] = "y"
+            log[i][2] = "ctrl:y"
         if "\x1A" ==  log[i][2]:
-            log[i][2] = "z"
+            log[i][2] = "ctrl:z"
         
 
     print(log)
@@ -159,22 +160,16 @@ def activator(_filename):
         if i[3] >= 3:
             if i[3] >=4:
                 if i[3] == 4:
-                    if i[2] == "ctrll"or i[2] == "ctrlr":
-                        h(i[2])
-                    else:
-                        d(i[2])
+                    d(i[2])
                 else:
-                    if i[2] == "ctrll"or i[2] == "ctrlr":
-                        g(i[2])
-                    else:
-                        e(i[2])
+                    e(i[2])
             else:
                 c(i[2][0],i[2][1])
         else:
             if i[3] == 1:
                 a(i[2][0],i[2][1])
             else:
-                b()
+                b(i[2][0],i[2][1])
         end_time = time.perf_counter()
         elapsed_time = end_time - start_time
         
@@ -182,7 +177,7 @@ def activator(_filename):
     return True
 
 if __name__ == "__main__":
-    activator("Sat,23,Apr,2022,11,22,05")
+    activator("Sun,24,Apr,2022,03,18,01")
 
     """ctrlr" == log[i][2]:
             log[i][2] = "ctrlright"

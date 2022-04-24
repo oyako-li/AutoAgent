@@ -2,7 +2,7 @@ import pyautogui as pgi
 import time
 
 def activator(_filename):
-    f = open(f"./log/{_filename}.txt", 'r')
+    f = open(f"./log/{_filename}.log", 'r')
 
     log = []
 
